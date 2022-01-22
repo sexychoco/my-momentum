@@ -1,0 +1,8 @@
+#clock {
+  font-size: 60px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  color: #56533a;
+  font-weight: 600;
+}

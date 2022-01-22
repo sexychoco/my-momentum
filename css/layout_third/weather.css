@@ -1,0 +1,29 @@
+#weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.weather-item span {
+  margin-left: 25px;
+  color: black;
+  font-size: 20px;
+}
+
+.weather-item i {
+  font-size: 25px;
+}
+
+.weather-item {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.weather-item:nth-child(2),
+.weather-item:nth-child(3) {
+  position: relative;
+  left: 5px;
+}
