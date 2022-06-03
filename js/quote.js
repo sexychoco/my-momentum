@@ -1,3 +1,5 @@
+const quote = document.querySelector(".quotes");
+
 const quotes = [
   { quote: "Life is what happens when you’re busy making other plans." },
   { quote: "When the going gets tough, the tough get going." },
@@ -13,7 +15,6 @@ const quotes = [
   { quote: "Don’t be afraid to give up the good to go for the great." },
 ];
 
-const quote = document.querySelector("#quote");
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;

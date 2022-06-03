@@ -1,21 +1,19 @@
-const loginForm = document.querySelector("#login-form");
-const longinInput = document.querySelector("#login-form input");
+const loginForm = document.querySelector(".login-form");
+const loginInput = document.querySelector(".login-form input");
 const greeting = document.querySelector("#greeting");
 
 function handleSubmitBtn(event) {
   event.preventDefault();
+  const username = loginInput.value;
   loginForm.classList.add("hidden");
-  const username = longinInput.value;
+  paintGreeting(username);
   localStorage.setItem("username", username);
-  paintGreetings(username);
 }
 
-function paintGreetings(username) {
-  greeting.innerText = `${username}'s Diary`;
+function paintGreeting(username) {
+  greeting.innerText = `Hello, ${username}`;
   greeting.classList.remove("hidden");
 }
-
-loginForm.addEventListener("submit", handleSubmitBtn);
 
 const savedUsername = localStorage.getItem("username");
 if (savedUsername === null) {
@@ -23,5 +21,7 @@ if (savedUsername === null) {
   loginForm.addEventListener("submit", handleSubmitBtn);
 } else {
   loginForm.classList.add("hidden");
-  paintGreetings(savedUsername);
+  paintGreeting(savedUsername);
 }
+
+loginForm.addEventListener("submit", handleSubmitBtn);
