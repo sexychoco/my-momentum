@@ -4,9 +4,20 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px 50px 20px;
+}
+
+.wrapper span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .calculator {
-  margin: 20px 20px 50px 20px;
-  border: 1px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
 
@@ -23,10 +34,12 @@ form {
 
 form input {
   font-size: 15px;
+  border: 0;
+  outline: 0;
 }
 
 .clear {
-  background-color: #c1a3a3;
+  background-color: #faf1f2;
 }
 
 .operator {
@@ -34,7 +47,7 @@ form input {
 }
 
 .dot {
-  background-color: #7d5959;
+  background-color: #c1a3a3;
 }
 
 form input[type="text"] {

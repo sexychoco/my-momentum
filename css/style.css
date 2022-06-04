@@ -8,21 +8,19 @@
 @import "./note.css";
 @import "./calculator.css";
 
-body {
-  background-color: #e1d9cc;
+html {
+  height: 100%;
 }
 
-html,
-body,
-main {
+body {
+  background-color: #e1d9cc;
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 }
 
 .column {
