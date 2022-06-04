@@ -1,0 +1,47 @@
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.todo-form span {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.todo-form input {
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+.todo-form input::placeholder {
+  display: flex;
+  text-align: center;
+}
+
+ul {
+  padding: 30px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  font-size: 20px;
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  font-size: 20px;
+  color: red;
+}

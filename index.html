@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My momentum</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <form class="login-form">
-        <input type="text" placeholder="what is your name?" required />
-        <input type="submit" value="login" />
+        <input id="login" type="text" placeholder="what is your name?" required />
+        <input id="btn" type="submit" value="✔"/>
       </form>
       <span id="greeting" class="hidden"></span>
     </header>
@@ -31,19 +32,9 @@
             <span class="location-span"></span>
           </div>
         </div>
-        <div class="link">
-          <div class="github-link">
-            <img src="img/github.png"/>
-            <a href="https://github.com/">Github</a>
-          </div>
-          <div class="naver-link">
-            <img src="img/naver.png"/>
-            <a href="https://www.naver.com/">Naver</a>
-          </div>
-          <div class="youtube-link">
-            <img src="img/youtube.png"/>
-            <a href="https://www.youtube.com/premium">Youtube</a>
-          </div>
+        <div class="notes">
+          <span>Memo</span>
+          <textarea></textarea>
         </div>
       </div>
       <div class="column">
@@ -57,9 +48,10 @@
         <div class="calendar">
           <div class="month">
             <i class="fas fa-angle-left prev"></i>
-            <div class="date"></div>
-            <h1></h1>
-            <p></p>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
             <i class="fas fa-angle-right next"></i>
           </div>
           <div class="weekdays">
@@ -72,9 +64,6 @@
             <div class="weekday">Sun</div>
           </div>
           <div class="days"></div>
-        </div>
-        <div class="notes">
-          <textarea></textarea>
         </div>
       </div>
     </main>

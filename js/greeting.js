@@ -11,7 +11,7 @@ function handleSubmitBtn(event) {
 }
 
 function paintGreeting(username) {
-  greeting.innerText = `Hello, ${username}`;
+  greeting.innerText = `${username}'s Diary`;
   greeting.classList.remove("hidden");
 }
 

@@ -1,0 +1,40 @@
+.hidden {
+  display: none !important;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+}
+
+#login {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 300px;
+  padding: 10px 0px 5px 0px;
+  display: flex;
+  text-align: center;
+  background-color: inherit;
+}
+
+#login::placeholder,
+#greeting {
+  font-size: 50px;
+  color: #446148;
+  font-weight: 600;
+}
+
+#btn {
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  font-size: 25px;
+  padding-bottom: 10px;
+}

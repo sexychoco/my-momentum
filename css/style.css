@@ -1,0 +1,38 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./clock.css";
+@import "./weather.css";
+@import "./link.css";
+@import "./footer.css";
+@import "./todo.css";
+@import "./calendar.css";
+@import "./note.css";
+
+body {
+  background-color: #e1d9cc;
+}
+
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+  background-color: #e3e0d8;
+  margin: 20px;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.column:first-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+}
