@@ -24,7 +24,12 @@ header {
   background-color: inherit;
 }
 
-#login::placeholder,
+#login::placeholder {
+  font-size: 30px;
+  color: #446148;
+  font-weight: 600;
+}
+
 #greeting {
   font-size: 50px;
   color: #446148;
